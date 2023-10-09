@@ -42,21 +42,21 @@ const App = () => {
                        
                         {
                             //ExpenseTotal component
-                            <div className='col-sm'>
+                            <div>
                                 <ExpenseList />
                             </div>
                         }         
 
                         {
                             //ExpenseTotal component
-                            <div className='col-sm'>
-                                <ExpenseItem />
-                            </div>
+                            // <div>
+                            //     <ExpenseItem />
+                            //</div>
                         }        
 
                         {
                             //ExpenseTotal component
-                            <div className='col-sm'>
+                            <div>
                                 <AllocationForm />
                             </div>
                         }        
