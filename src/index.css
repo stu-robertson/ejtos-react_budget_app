@@ -18,3 +18,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-dropdown {
+    background-color: rgb(111, 235, 152); /* Set the background color to green */
+    color: white; /* Set the text color to white */
+    padding: 5px; /* Add some padding for spacing */
+}
+
+/* Style the option elements within the select with a specific class */
+.custom-dropdown option {
+    background-color: rgb(111, 235, 152); /* Set the background color of the options to green */
+    color: black; /* Set the text color of the options to white */
+}
+
+.custom-dropdown option:hover {
+    background-color: white;
+}
