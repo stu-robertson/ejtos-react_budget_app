@@ -4,12 +4,13 @@ const Budget = () => {
     const { budget } = useContext(AppContext);
     const { dispatch } = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
-    const handleBudgetChange = (event) => {
-        setNewBudget(event.target.value);
+    const handleBudgetChange = (event) => {    
+        const newBudgetValue = event.target.value;
+        setNewBudget(newBudgetValue);
         dispatch({ 
             type:'SET_BUDGET', 
-            payload: event.target.value
-        });
+            payload: newBudgetValue,
+       });
     }
     return (
 <div className='alert alert-secondary'>
