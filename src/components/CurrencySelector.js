@@ -7,7 +7,7 @@ const Currency = () => {
       console.log(e);
     }
     return (
-      <div className="App">
+    <div className = "alert">
         <div className="dropdown">
           <div
             onClick={(e) => {
@@ -62,7 +62,7 @@ const Currency = () => {
             </div>
           </div>
         </div>
-      </div>
+    </div>
     );
    
 };
