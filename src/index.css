@@ -19,18 +19,42 @@ code {
     monospace;
 }
 
-.custom-dropdown {
-    background-color: rgb(111, 235, 152); /* Set the background color to green */
-    color: white; /* Set the text color to white */
-    padding: 5px; /* Add some padding for spacing */
-}
-
-/* Style the option elements within the select with a specific class */
-.custom-dropdown option {
-    background-color: rgb(111, 235, 152); /* Set the background color of the options to green */
-    color: black; /* Set the text color of the options to white */
-}
-
-.custom-dropdown option:hover {
-    background-color: white;
-}
+.dropdown {
+    margin: 0 auto;
+    z-index: 10000;
+    width: 200px;
+    position: relative;
+  }
+  .dropdown,
+  .dropdown * {
+    z-index: 10;
+  }
+  .dropdown .dropdown-btn {
+    cursor: pointer;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(166, 248, 166);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: white;
+    font-weight: 500;
+  }
+  .dropdown-content {
+    position: absolute;
+    /* top: 110%; */
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.07);
+  }
+  .dropdown-content .item {
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(166, 248, 166);
+  }
+  .dropdown-content .item:hover {
+    background: #fcfcfc;
+  }
+  
