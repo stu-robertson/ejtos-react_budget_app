@@ -31,6 +31,7 @@ code {
     --bs-alert-link-color: inherit;
     position: relative;
     padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+    margin-top: 0px;
     margin-bottom: var(--bs-alert-margin-bottom);
     color: var(--bs-alert-color);
     background-color: var(--bs-alert-bg);
@@ -57,11 +58,14 @@ code {
   .dropdown-content {
     position: absolute;
     /* top: 110%; */
+    background: rgb(166, 248, 166);
     left: 0;
-    width: 80%;
+    width: 90%;
     margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: var(--bs-alert-border-radius);
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
   }
   .dropdown-content .item {
     padding: 10px;
@@ -72,3 +76,12 @@ code {
     background: #fcfcfc;
   }
   
+.budget-input {
+    width: 60%;
+}
+
+.currency-label {
+    margin-top: 8px;
+    padding-left: 2rem;
+    padding-right: 7px;
+}
